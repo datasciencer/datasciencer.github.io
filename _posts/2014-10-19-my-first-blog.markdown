@@ -7,11 +7,11 @@ categories: blog
 
 Finally, I have a blog run on Jekyll and Github. In my case, the simplest way is using pure Jekyll. Others solutions such as Octopress or Jekyllbootstrap have cost me a lot energy and time. Moreover, I felt that these latters have taken away from the UNIX's KISS principle. What please me the most with pure Jekyll is the Spartan configurations. Everythins is about the contents, the appearance is reduced to the strict necessary.
 
-Hesre are steps (in my case) to lauch the [datasciencer] blog:
+Here are steps (in my case) to lauch the [datasciencer] blog:
 
 * Pre-install nodejs to have a javascript instant : sudo pacman -S nodejs
 * Create within my Github account the repository *datasciencer.github.io*
-*Add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
+* Add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
 * Let's start now by creating the jekyll blog : 
 	* source .bash_profile
 	* gem install jekyll
@@ -24,6 +24,25 @@ Hesre are steps (in my case) to lauch the [datasciencer] blog:
 	* git pull
 	* git push origin master
 
+
+Let's check if jekyll could highlight R code
+
+{% highlight R %}
+packages_vec <- c('reshape2', 'ggplot2', 'XLConnect', 'dplyr')
+lapply(packages_vec, require, character.only=T)
+{% endhighlight %}
+
+Here is another insert
+
+```R
+sourceDir <- function (path, pattern = "\\.[rR]$", env = NULL, chdir = TRUE) 
+{
+    files <- sort(dir(path, pattern, full.names = TRUE))
+    lapply(files, source, chdir = chdir)
+}
+
+sourceDir(path="Functions")
+```
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
