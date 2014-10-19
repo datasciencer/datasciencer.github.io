@@ -2,7 +2,7 @@
 title: Data-ScicenceR
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
- The website about building up a workflow in Actuarial Science.
+ The website provides several materials for an actuary to set up his/her everyday workflow.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: 
