@@ -12,3 +12,4 @@ github_username:  datasciencer
 
 # Build settings
 markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
