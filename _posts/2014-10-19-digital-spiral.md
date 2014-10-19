@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "The digital spiral"
+date:   2014-10-19 21:12:11
+categories: blog
+---
+
+
 The digital spiral
 =========================
 
