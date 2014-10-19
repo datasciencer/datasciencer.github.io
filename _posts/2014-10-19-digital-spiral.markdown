@@ -5,12 +5,6 @@ date:   2014-10-19 21:12:11
 categories: blog
 ---
 
-
-The digital spiral
-=========================
-
-
-
 The Internet is everywhere, the only reasonable answer is individual.
 
 [Lemonde](http://www.lemonde.fr/style/article/2012/04/27/ces-branches-qui-debranchent_1691531_1575563.html)
