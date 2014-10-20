@@ -28,6 +28,7 @@ Here are steps (in my case) to lauch the [datasciencer] blog:
 Let's check if jekyll could highlight R code
 
 {% highlight R %}
+
 packages_vec <\- c('reshape2', 'ggplot2', 'XLConnect', 'dplyr')
 lapply(packages_vec, require, character.only=T)
 
@@ -36,9 +37,9 @@ lapply(packages_vec, require, character.only=T)
 
 In case of multi-github-accounts: follow [this link](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574) : 
 
-
-* Create a config file inside .ssh/ for github-1 and github-2
-* Inside each origin folder, enter this command into the terminal : git remote set-url origin git@github-kek:account1/account1.github.io.git
+* Generate a key for each repository of different github accounts
+* Create a config file inside .ssh/ for ghaccount-1 and ghaccount-2
+* Inside each origin folder, for example github account-1, enter this command into the terminal : git remote set-url origin git@ghaccount-1:nameaccount1/nameaccount1.github.io.git
 
 
 
