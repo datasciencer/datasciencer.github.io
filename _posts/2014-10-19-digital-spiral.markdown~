@@ -46,7 +46,7 @@ The main idea is that the PC should stay a modern type-writer. An over-connectio
 
 **For programming**
 
-* Sublime Text 3 : for .md and  .R files
+* Sublime Text 3 : for .md, .R files
 * Git
 * Rstudio : for .Rmd
 * Pandoc : convert documents
