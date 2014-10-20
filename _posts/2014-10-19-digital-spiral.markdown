@@ -29,18 +29,26 @@ The devices shouldn't be more than 10
 
 ## Softwares ##
 
-The main idea is that the PC should stay a modern type-writer. An over-connection will lead into a inefficient state. Hence, the softwares shouldn't be more than 10
+The main idea is that the PC should stay a modern type-writer. An over-connection will lead into a inefficient state. Hence, the softwares shouldn't be more than 15
 
-* Zim
-* Sublime Text 3 : for .md, .R files
-* Rstudio : for .Rmd
-* pandoc
-* Git
-* Grsync
+**For everyday use**
+
+* Zim : taking notes and journal
+* Keepassx : centralize passwords
 * Firefox (+ plugins Addblock Edge, Pentadactyl)
-* Shotwell
-* Gimp	
 * Smplayer (or VLC)
+* Grsync
+
+**For photography**
+
+* Shotwell
+* Gimp
+
+**For programming**
+* Sublime Text 3 : for .md, .R files
+* Git
+* Rstudio : for .Rmd
+* Pandoc : convert documents
 
 **Note** : Some softwares are not included in the list since I consider these  default softwares of the OS ( mine is a Xfce Manjaro Linux):
 
