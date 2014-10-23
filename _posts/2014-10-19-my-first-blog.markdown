@@ -32,19 +32,18 @@ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-buil
 {% endhighlight %}
 * Create within my Github account the repository *datasciencer.github.io*
 * Install openssh
-{% highlight sh %}
- sudo pacman -S openssh
-{% endhighlight
+
 * Generate and add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
+* Install **jekyll** through Ruby's **gem**
+{% highlight sh %}
+ gem install jekyll
+{% endhighlight %}
 
 ## Write the first blog
 
  Let's start now by creating the jekyll blog : 
 
-* source .bash_profile
-* gem install jekyll
 * jekyll new datasciencer.github.io
-* jekyll serve
 * cd datasciencer.github.io
 * git remote set-url origin git@github.com:datasciencer/datasciencer.githu.io.git
 * git add .
@@ -63,7 +62,7 @@ lapply(packages_vec, require, character.only=T)
 {% endhighlight %}
 
 
-In case of multi-github-accounts: follow [this link](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574) : 
+In case that you have multi-github-accounts and want to set ssh certificates,  follow [this link](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574) : 
 
 * Generate a key for each repository of different github accounts
 * Create a config file inside .ssh/ for ghaccount-1 and ghaccount-2
