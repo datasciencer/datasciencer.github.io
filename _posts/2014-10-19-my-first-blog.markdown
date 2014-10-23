@@ -11,11 +11,31 @@ Here are steps (in my case) to lauch the [datasciencer] blog:
 
 ## Set-up stuffs:
 
-* Install Git : sudo pacman -S git
-* Ruby using **rbenv** [How](http://octopress.org/docs/setup/rbenv/)
-* Pre-install nodejs to have a javascript instant : sudo pacman -S nodejs
+* Install Git : 
+{% highlight sh %}
+sudo pacman -S git
+{% endhighlight %}
+
+* Ruby using **rbenv** [How](http://octopress.org/docs/setup/rbenv/). Add this to your *.bashrc* file
+
+{% highlight sh %}
+cd
+git clone git://github.com/sstephenson/rbenv.git .rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+{% endhighlight %}
+
+* Pre-install nodejs to have a javascript instant :
+{% highlight sh %}
+ sudo pacman -S nodejs
+{% endhighlight %}
 * Create within my Github account the repository *datasciencer.github.io*
-* Add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
+* Install openssh
+{% highlight sh %}
+ sudo pacman -S openssh
+{% endhighlight
+* Generate and add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
 
 ## Write the first blog
 
