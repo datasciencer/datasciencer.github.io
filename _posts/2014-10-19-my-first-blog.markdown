@@ -9,20 +9,28 @@ Finally, I have a blog run on Jekyll and Github. In my case, the simplest way is
 
 Here are steps (in my case) to lauch the [datasciencer] blog:
 
+## Set-up stuffs:
+
+* Install Git : sudo pacman -S git
+* Ruby using **rbenv** [How](http://octopress.org/docs/setup/rbenv/)
 * Pre-install nodejs to have a javascript instant : sudo pacman -S nodejs
 * Create within my Github account the repository *datasciencer.github.io*
 * Add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
-* Let's start now by creating the jekyll blog : 
-	* source .bash_profile
-	* gem install jekyll
-	* jekyll new datasciencer.github.io
-	* jekyll serve
-	* cd datasciencer.github.io
-	* git remote set-url origin git@github.com:datasciencer/datasciencer.github.io.git
-	* git add .
-	* git commit -m "first commit"
-	* git pull
-	* git push origin master
+
+## Write the first blog
+
+ Let's start now by creating the jekyll blog : 
+
+* source .bash_profile
+* gem install jekyll
+* jekyll new datasciencer.github.io
+* jekyll serve
+* cd datasciencer.github.io
+* git remote set-url origin git@github.com:datasciencer/datasciencer.githu.io.git
+* git add .
+* git commit -m "first commit"
+* git pull
+* git push origin master
 
 
 Let's check if jekyll could highlight R code
