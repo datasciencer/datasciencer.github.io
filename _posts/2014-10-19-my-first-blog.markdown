@@ -9,20 +9,47 @@ Finally, I have a blog run on Jekyll and Github. In my case, the simplest way is
 
 Here are steps (in my case) to lauch the [datasciencer] blog:
 
-* Pre-install nodejs to have a javascript instant : sudo pacman -S nodejs
+## Set-up stuffs:
+
+* Install Git : 
+{% highlight sh %}
+sudo pacman -S git
+{% endhighlight %}
+
+* Ruby using **rbenv** [How](http://octopress.org/docs/setup/rbenv/). Add this to your *.bashrc* file
+
+{% highlight sh %}
+cd
+git clone git://github.com/sstephenson/rbenv.git .rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+{% endhighlight %}
+
+* Pre-install nodejs to have a javascript instant :
+{% highlight sh %}
+ sudo pacman -S nodejs
+{% endhighlight %}
 * Create within my Github account the repository *datasciencer.github.io*
-* Add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
-* Let's start now by creating the jekyll blog : 
-	* source .bash_profile
-	* gem install jekyll
-	* jekyll new datasciencer.github.io
-	* jekyll serve
-	* cd datasciencer.github.io
-	* git remote set-url origin git@github.com:datasciencer/datasciencer.github.io.git
-	* git add .
-	* git commit -m "first commit"
-	* git pull
-	* git push origin master
+* Install openssh
+
+* Generate and add the public ssh key to this repository inside Settings/Deploy key. The key is show by enter this command line inside the terminal : cat .ssh/id_rsa.pub
+* Install **jekyll** through Ruby's **gem**
+{% highlight sh %}
+ gem install jekyll
+{% endhighlight %}
+
+## Write the first blog
+
+ Let's start now by creating the jekyll blog : 
+
+* jekyll new datasciencer.github.io
+* cd datasciencer.github.io
+* git remote set-url origin git@github.com:datasciencer/datasciencer.githu.io.git
+* git add .
+* git commit -m "first commit"
+* git pull
+* git push origin master
 
 
 Let's check if jekyll could highlight R code
@@ -35,7 +62,7 @@ lapply(packages_vec, require, character.only=T)
 {% endhighlight %}
 
 
-In case of multi-github-accounts: follow [this link](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574) : 
+In case that you have multi-github-accounts and want to set ssh certificates,  follow [this link](http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574) : 
 
 * Generate a key for each repository of different github accounts
 * Create a config file inside .ssh/ for ghaccount-1 and ghaccount-2
